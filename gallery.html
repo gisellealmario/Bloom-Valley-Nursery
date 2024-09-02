@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gallery</title>
+  <link href="gallery.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <header class="header">
+    <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38750/file/92f8db644af4a8f03ea2e2c944c00614.png"
+      alt="Header Photo" class="header-photo">
+    <div class="logo-container">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38747/file/02a47e24a7a95dbfbe6aecd6059a1ee5.png"
+        alt="Logo" class="logo">
+      <h1 class="site-name">Gallery</h1>
+      <br>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="homepage.html">Home</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--Shopping cart button-->
+  <br>
+  <!-- Cart Button -->
+  <button id="cart-button" onclick="toggleCart()">View Shopping Cart</button>
+
+  <!-- Modal for Cart -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleCart()">&times;</span>
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+      <div class="modal-buttons">
+        <button id="clear-cart-button" onclick="clearCart()">Clear Shopping Cart</button>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- notification-->
+  <div id="notification" class="notification">Item Added!</div>
+
+  <script src="gallery.js" defer></script>
+  <div class="product-list">
+    <!-- Potting soil -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38756/file/7d4f80ca1889798edd7488278fcea308.png"
+        alt="Potting soil" class="product-photo">
+      <h3 class="product-name">Potting soil</h3>
+      <p class="product-price">$10.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('Potting soil', 10.00)">Add to Cart</button>
+    </div>
+    <!-- String of pearls plant -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38754/file/f2ddb4ed5dc39c247b51155ea6740a34.png"
+        alt="String of pearls plant" class="product-photo">
+      <h3 class="product-name">String of pearls plant</h3>
+      <p class="product-price">$15.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('String of pearls plant', 15.00)">Add to Cart</button>
+    </div>
+    <!-- Spider Plant -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38753/file/d8908bd91789eebeb73ad9b8c120db3e.png"
+        alt="Spider Plant" class="product-photo">
+      <h3 class="product-name">Spider Plant</h3>
+      <p class="product-price">$20.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('Spider Plant', 20.00)">Add to Cart</button>
+    </div>
+    <!-- Birdhouse -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38755/file/26bdb9fb437a3c5413fafd15f1e87128.png"
+        alt="Birdhouse" class="product-photo">
+      <h3 class="product-name">Birdhouse</h3>
+      <p class="product-price">$25.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('Birdhouse', 25.00)">Add to Cart</button>
+    </div>
+    <!-- Apple Tree -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38749/file/df058be644b388df61a931ef7c3e777d.png"
+        alt="Apple Tree" class="product-photo">
+      <h3 class="product-name">Apple Tree</h3>
+      <p class="product-price">$30.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('Apple Tree', 30.00)">Add to Cart</button>
+    </div>
+    <!-- Maple Tree -->
+    <div class="product-item">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38751/file/543bc22a65d3060b402762d400c005e6.png"
+        alt="Maple Tree" class="product-photo">
+      <h3 class="product-name">Maple Tree</h3>
+      <p class="product-price">$35.00</p>
+      <button class="add-to-cart-button" onclick="addToCart('Maple Tree', 35.00)">Add to Cart</button>
+    </div>
+  </div>
+</body>
+
+</html>

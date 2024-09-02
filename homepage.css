@@ -1,0 +1,225 @@
+.html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #CACADD;
+  /* Replace with your desired color */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* Adjust height as needed */
+}
+
+.header-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire header area */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  /* Vertically centers the logo and site name */
+  left: 50%;
+  /* Horizontally centers the logo and site name */
+  transform: translate(-50%, -50%);
+  /* Ensures perfect centering */
+  text-align: center;
+  color: #fff;
+  /* Makes text white */
+}
+
+.logo {
+  max-width: 100px;
+  /* Adjust size of the logo */
+  height: auto;
+}
+
+.site-name {
+  font-size: 36px;
+  /* Adjust the size of the site name text */
+  margin: 10px 0 0;
+  /* Adjust spacing between logo and site name */
+}
+
+/* Navbar container */
+.navbar {
+  background-color: transparent;
+  /* Transparent background */
+  padding: 10px 0;
+  /* Vertical padding for the navbar */
+}
+
+/* Navbar list */
+.nav-list {
+  list-style-type: none;
+  /* Remove bullets */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  /* Align items horizontally */
+  justify-content: center;
+  /* Center the items */
+  gap: 20px;
+  /* Space between buttons */
+}
+
+/* Navbar items */
+.nav-item {
+  font-family: Arial, sans-serif;
+  /* Font style */
+}
+
+/* Style for the links (buttons) */
+.nav-item a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #00231C;
+  /* Font color */
+  background-color: #CACADD;
+  /* Button background color */
+  padding: 10px 20px;
+  /* Padding inside buttons */
+  border-radius: 50px;
+  /* Tubular (pill-shaped) corners */
+  font-size: 16px;
+  /* Font size */
+  border: 2px solid #00231C;
+  /* Border to define tubular shape */
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #557A93;
+  /* Background color on hover */
+  color: #FFFFFF;
+  /* Font color on hover */
+}
+
+.tubular-container {
+  display: flex;
+  /* Align items in a row (horizontal) */
+  gap: 15px;
+  /* Space between each item */
+  background-color: #7DA1B5;
+  /* Background color for the container */
+  padding: 20px;
+  /* Padding inside the container */
+  border-radius: 8px;
+  /* Rounded corners for the container */
+  max-width: 100%;
+  /* Make the container as wide as possible */
+  margin: 0 auto;
+  /* Center the container horizontally */
+  overflow-x: auto;
+  /* Enable horizontal scrolling if necessary */
+}
+
+/* Item styling */
+.tubular-item {
+  background-color: #CACADD;
+  /* Background color for each item */
+  padding: 15px;
+  /* Padding inside each item */
+  border-radius: 4px;
+  /* Rounded corners for items */
+  font-family: Arial, sans-serif;
+  /* Font style */
+  font-size: 16px;
+  /* Font size */
+  color: #00231C;
+  /* Font color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for items */
+  flex: 1;
+  /* Allow items to grow equally */
+  text-align: center;
+  /* Center the text inside each item */
+  min-width: 150px;
+  /* Minimum width to keep items visible */
+}
+
+.container-shop-button {
+  display: flex;
+  align-items: center;
+}
+
+.shop-now-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #557a93;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.shop-now-button:hover {
+  background-color: #47687c;
+}
+
+.display {
+  width: 50%;
+  height: 50vh;
+  margin-right: 200px;
+  /* Space between image and button */
+}
+
+.category-container {
+  max-width: 300px;
+  /* Adjust the width of the container */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.category-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-item {
+  margin: 10px 0;
+}
+
+.category-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  background-color: #557a93;
+  /* Color of the tubular category */
+  border-radius: 50px;
+  /* Creates the tubular/pill shape */
+  text-align: center;
+  /* Centers the text within the tubular shape */
+  transition: background-color 0.3s;
+}
+
+.category-item a:hover {
+  background-color: #47687c;
+  /* Darker shade on hover */
+}

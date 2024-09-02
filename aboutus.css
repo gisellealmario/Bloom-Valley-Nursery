@@ -1,0 +1,249 @@
+.html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #CACADD;
+  /* Replace with your desired color */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* Adjust height as needed */
+}
+
+.header-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire header area */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  /* Vertically centers the logo and site name */
+  left: 50%;
+  /* Horizontally centers the logo and site name */
+  transform: translate(-50%, -50%);
+  /* Ensures perfect centering */
+  text-align: center;
+  color: #fff;
+  /* Makes text white */
+}
+
+.logo {
+  max-width: 100px;
+  /* Adjust size of the logo */
+  height: auto;
+}
+
+.site-name {
+  font-size: 36px;
+  /* Adjust the size of the site name text */
+  margin: 10px 0 0;
+  /* Adjust spacing between logo and site name */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Background color */
+  padding: 10px 0;
+  /* Vertical padding for the navbar */
+}
+
+/* Navbar list */
+.nav-list {
+  list-style-type: none;
+  /* Remove bullets */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  /* Align items horizontally */
+  justify-content: center;
+  /* Center the items */
+  gap: 20px;
+  /* Space between buttons */
+}
+
+/* Navbar items */
+.nav-item {
+  font-family: Arial, sans-serif;
+  /* Font style */
+}
+
+/* Style for the links (buttons) */
+.nav-item a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #00231C;
+  /* Font color */
+  background-color: #CACADD;
+  /* Button background color */
+  padding: 10px 20px;
+  /* Padding inside buttons */
+  border-radius: 50px;
+  /* Tubular (pill-shaped) corners */
+  font-size: 16px;
+  /* Font size */
+  border: 2px solid #00231C;
+  /* Border to define tubular shape */
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #557A93;
+  /* Background color on hover */
+  color: #FFFFFF;
+  /* Font color on hover */
+}
+
+#about-us {
+  background-color: #CACADD;
+  /* Background color for the section */
+  color: #00231C;
+  /* Font color */
+  padding: 2rem;
+  /* Padding around the section */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+}
+
+#about-us .container {
+  max-width: 800px;
+  /* Maximum width of the content */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#about-us h1 {
+  font-size: 2.5rem;
+  /* Font size for the heading */
+  margin-bottom: 1rem;
+  /* Space below the heading */
+}
+
+#about-us p {
+  font-size: 1rem;
+  /* Font size for paragraphs */
+  line-height: 1.6;
+  /* Line height for readability */
+  margin-bottom: 1rem;
+  /* Space below each paragraph */
+}
+
+.hours-of-operation {
+  background-color: #a294b5;
+  /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hours-of-operation h2 {
+  color: #00231C;
+  /* Dark color for the heading */
+  margin-bottom: 10px;
+}
+
+.hours-of-operation ul {
+  list-style: none;
+  /* Remove default list styling */
+  padding: 0;
+}
+
+.hours-of-operation li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #00231C;
+  /* Dark color for the text */
+}
+
+.hours-of-operation strong {
+  color: #557A93;
+  /* Highlighted color for the labels */
+}
+
+#contact-us {
+  background-color: #CACADD;
+  /* Background color for the section */
+  color: #00231C;
+  /* Font color */
+  padding: 2rem;
+  /* Padding around the section */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+}
+
+#contact-us .container {
+  max-width: 600px;
+  /* Maximum width of the content */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#contact-us h1 {
+  font-size: 2rem;
+  /* Font size for the heading */
+  margin-bottom: 1rem;
+  /* Space below the heading */
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  /* Space below each form group */
+}
+
+.form-group label {
+  display: block;
+  /* Make labels block level */
+  margin-bottom: 0.5rem;
+  /* Space below the label */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  /* Full width inputs and textareas */
+  padding: 0.5rem;
+  /* Padding inside the inputs and textareas */
+  border: 1px solid #ccc;
+  /* Border for inputs and textareas */
+  border-radius: 4px;
+  /* Rounded corners */
+}
+
+.form-buttons {
+  margin-top: 1rem;
+  /* Space above the buttons */
+}
+
+.form-buttons button {
+  background-color: #00231C;
+  /* Button background color */
+  color: #CACADD;
+  /* Button text color */
+  border: none;
+  /* Remove default border */
+  padding: 0.5rem 1rem;
+  /* Padding inside the buttons */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  margin-right: 0.5rem;
+  /* Space between buttons */
+}
+
+.form-buttons button:hover {
+  background-color: #004d00;
+  /* Darker shade on hover */
+}

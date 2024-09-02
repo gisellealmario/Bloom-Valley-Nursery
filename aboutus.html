@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="aboutus.css" rel="stylesheet" type="text/css" />
+  <script src="aboutus.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38750/file/92f8db644af4a8f03ea2e2c944c00614.png"
+      alt="Header Photo" class="header-photo">
+
+    <div class="logo-container">
+      <img src="https://sophialearning.s3.amazonaws.com/markup_pictures/38747/file/02a47e24a7a95dbfbe6aecd6059a1ee5.png"
+        alt="Logo" class="logo">
+      <h1 class="site-name">About Us</h1>
+      <br>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="homepage.html">Home</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="about-us">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>Bloom Valley Nursery operates as a local, family-owned plant nursery in the area, specializing in the sale of a
+        wide variety of plants, trees, and gardening supplies. It aims to connect with gardening enthusiasts and
+        homeowners in the community who share a passion for horticulture.</p>
+      <p>While the client does not have an existing website, it envisions a digital presence that reflects the natural
+        beauty of its plant nursery and resonates with gardening enthusiasts in the local community. As the client
+        focuses on sustainability and creativity in its operations, the primary goal of the website is to enhance
+        visibility in the local market, foster community engagement, and facilitate customer inquiries and orders. Its
+        target audience comprises local gardening enthusiasts and homeowners seeking high-quality plants and gardening
+        supplies.</p>
+    </div>
+  </section>
+  <div class="hours-of-operation">
+    <h2>Hours of Operation</h2>
+    <ul>
+      <li><strong>Monday–Friday:</strong> 9 a.m. to 6 p.m.</li>
+      <li><strong>Saturday–Sunday:</strong> 10 a.m. to 5 p.m.</li>
+    </ul>
+  </div>
+  <section id="contact-us">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form id="contact-form" action="/submit-form" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="order-info">Order Information:</label>
+          <textarea id="order-info" name="order-info" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="customer-order" name="customer-order">
+          <label for="customer-order">Is this a customer order?</label>
+        </div>
+        <div class="form-buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>

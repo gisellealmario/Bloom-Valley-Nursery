@@ -1,0 +1,308 @@
+.html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #CACADD;
+  /* Replace with your desired color */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* Adjust height as needed */
+}
+
+.header-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire header area */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  /* Vertically centers the logo and site name */
+  left: 50%;
+  /* Horizontally centers the logo and site name */
+  transform: translate(-50%, -50%);
+  /* Ensures perfect centering */
+  text-align: center;
+  color: #fff;
+  /* Makes text white */
+}
+
+.logo {
+  max-width: 100px;
+  /* Adjust size of the logo */
+  height: auto;
+}
+
+.site-name {
+  font-size: 36px;
+  /* Adjust the size of the site name text */
+  margin: 10px 0 0;
+  /* Adjust spacing between logo and site name */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Background color */
+  padding: 10px 0;
+  /* Vertical padding for the navbar */
+}
+
+/* Navbar list */
+.nav-list {
+  list-style-type: none;
+  /* Remove bullets */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  /* Align items horizontally */
+  justify-content: center;
+  /* Center the items */
+  gap: 20px;
+  /* Space between buttons */
+}
+
+/* Navbar items */
+.nav-item {
+  font-family: Arial, sans-serif;
+  /* Font style */
+}
+
+/* Style for the links (buttons) */
+.nav-item a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #00231C;
+  /* Font color */
+  background-color: #CACADD;
+  /* Button background color */
+  padding: 10px 20px;
+  /* Padding inside buttons */
+  border-radius: 50px;
+  /* Tubular (pill-shaped) corners */
+  font-size: 16px;
+  /* Font size */
+  border: 2px solid #00231C;
+  /* Border to define tubular shape */
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #557A93;
+  /* Background color on hover */
+  color: #FFFFFF;
+  /* Font color on hover */
+}
+
+/* Style for Cart Button */
+#cart-button {
+  background-color: #557A93;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1001;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black w/ opacity */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #CACADD;
+  margin: 15% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  /* Limit max width */
+  border-radius: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#clear-cart-button,
+#checkout-button {
+  background-color: #557A93;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 48%;
+}
+
+#clear-cart-button:hover,
+#checkout-button:hover {
+  background-color: #465f74;
+}
+
+/* Close button for modal */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Style for the cart items list */
+#cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+#cart-items li {
+  margin-bottom: 10px;
+}
+
+/* Container for the entire product list */
+.product-list {
+  display: grid;
+  /* Use grid layout */
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 columns */
+  grid-gap: 20px;
+  /* Space between the grid items */
+  justify-items: center;
+  /* Center the items within the grid */
+  margin-top: 20px;
+  /* Space from the top */
+  padding: 0 20px;
+  /* Padding around the grid */
+}
+
+/* Styling each product item */
+.product-item {
+  background-color: #A293B5;
+  /* Light gray background */
+  padding: 20px;
+  /* Space inside the product box */
+  border-radius: 10px;
+  /* Rounded corners */
+  width: 100%;
+  /* Make product boxes responsive */
+  max-width: 300px;
+  /* Maximum width of each product box */
+  text-align: center;
+  /* Center align text and button */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+/* Styling the product photos */
+.product-photo {
+  width: 100%;
+  /* Make photo take up full width */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 10px;
+  /* Match the product box radius */
+}
+
+/* Styling the product name */
+.product-name {
+  font-size: 20px;
+  /* Larger text size */
+  color: #00231C;
+  /* Dark font color */
+  margin: 10px 0;
+  /* Space above and below the name */
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the product price */
+.product-price {
+  font-size: 18px;
+  /* Slightly smaller than the name */
+  color: #557A93;
+  /* Use the primary color */
+  margin-bottom: 10px;
+  /* Space below the price */
+}
+
+/* Styling the Add to Cart button */
+.add-to-cart-button {
+  background-color: #557A93;
+  /* Button background color */
+  color: #FFFFFF;
+  /* Button text color */
+  padding: 10px 20px;
+  /* Space inside the button */
+  border: none;
+  /* Remove default border */
+  border-radius: 50px;
+  /* Rounded corners */
+  font-size: 16px;
+  /* Font size */
+  cursor: pointer;
+  /* Change cursor on hover */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Add to Cart button */
+.add-to-cart-button:hover {
+  background-color: #00231C;
+  /* Darker color on hover */
+}
+
+.notification {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #557A93;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1000;
+}

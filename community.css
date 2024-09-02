@@ -1,0 +1,360 @@
+.html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #CACADD;
+  /* Replace with your desired color */
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* Adjust height as needed */
+}
+
+.header-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the entire header area */
+}
+
+.logo-container {
+  position: absolute;
+  top: 50%;
+  /* Vertically centers the logo and site name */
+  left: 50%;
+  /* Horizontally centers the logo and site name */
+  transform: translate(-50%, -50%);
+  /* Ensures perfect centering */
+  text-align: center;
+  color: #fff;
+  /* Makes text white */
+}
+
+.logo {
+  max-width: 100px;
+  /* Adjust size of the logo */
+  height: auto;
+}
+
+.site-name {
+  font-size: 36px;
+  /* Adjust the size of the site name text */
+  margin: 10px 0 0;
+  /* Adjust spacing between logo and site name */
+}
+
+.navbar {
+  background-color: transparent;
+  /* Background color */
+  padding: 10px 0;
+  /* Vertical padding for the navbar */
+}
+
+/* Navbar list */
+.nav-list {
+  list-style-type: none;
+  /* Remove bullets */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+  /* Remove default padding */
+  display: flex;
+  /* Align items horizontally */
+  justify-content: center;
+  /* Center the items */
+  gap: 20px;
+  /* Space between buttons */
+}
+
+/* Navbar items */
+.nav-item {
+  font-family: Arial, sans-serif;
+  /* Font style */
+}
+
+/* Style for the links (buttons) */
+.nav-item a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: #00231C;
+  /* Font color */
+  background-color: #CACADD;
+  /* Button background color */
+  padding: 10px 20px;
+  /* Padding inside buttons */
+  border-radius: 50px;
+  /* Tubular (pill-shaped) corners */
+  font-size: 16px;
+  /* Font size */
+  border: 2px solid #00231C;
+  /* Border to define tubular shape */
+  transition: background-color 0.3s ease;
+  /* Smooth background change */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #557A93;
+  /* Background color on hover */
+  color: #FFFFFF;
+  /* Font color on hover */
+}
+
+#customer-spotlights {
+  background-color: #CACADD;
+  /* Background color for the section */
+  color: #00231C;
+  /* Font color */
+  padding: 2rem;
+  /* Padding around the section */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+}
+
+#customer-spotlights .container {
+  max-width: 1200px;
+  /* Maximum width of the content */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#customer-spotlights h1 {
+  font-size: 2.5rem;
+  /* Font size for the heading */
+  margin-bottom: 1.5rem;
+  /* Space below the heading */
+  text-align: center;
+  /* Center the heading */
+}
+
+.spotlights {
+  display: flex;
+  /* Flexbox for horizontal layout */
+  justify-content: space-between;
+  /* Space between items */
+  gap: 1rem;
+  /* Space between spotlight items */
+}
+
+.spotlight {
+  background-color: #a293b5;
+  /* Background color for spotlight items */
+  color: #00231C;
+  /* Font color for spotlight items */
+  padding: 1rem;
+  /* Padding inside spotlight items */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  flex: 1;
+  /* Flex property to evenly distribute space */
+  max-width: 30%;
+  /* Limit width of each spotlight */
+}
+
+.spotlight h2 {
+  font-size: 1.5rem;
+  /* Font size for spotlight names */
+  margin-bottom: 0.5rem;
+  /* Space below the name */
+}
+
+.spotlight p {
+  font-size: 1rem;
+  /* Font size for spotlight descriptions */
+  line-height: 1.5;
+  /* Line height for readability */
+}
+
+#events-collaborations {
+  color: #00231C;
+  /* Font color */
+  padding: 2rem;
+  /* Padding around the section */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+}
+
+#events-collaborations .container {
+  max-width: 1200px;
+  /* Maximum width of the content */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#events-collaborations h1 {
+  font-size: 2.5rem;
+  /* Font size for the heading */
+  margin-bottom: 1.5rem;
+  /* Space below the heading */
+  text-align: center;
+  /* Center the heading */
+}
+
+.columns {
+  display: flex;
+  /* Flexbox for column layout */
+  gap: 2rem;
+  /* Space between columns */
+}
+
+.column {
+  flex: 1;
+  /* Flex property to evenly distribute space */
+  background-color: #7da1b5;
+  /* Background color for columns */
+  padding: 1rem;
+  /* Padding inside columns */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+.column h2 {
+  font-size: 2rem;
+  /* Font size for column headings */
+  margin-bottom: 1rem;
+  /* Space below the column heading */
+}
+
+.event,
+.collaboration {
+  margin-bottom: 1.5rem;
+  /* Space below each event or collaboration */
+}
+
+.event h3,
+.collaboration h3 {
+  font-size: 1.5rem;
+  /* Font size for event or collaboration titles */
+  margin-bottom: 0.5rem;
+  /* Space below the title */
+}
+
+.event p,
+.collaboration p {
+  font-size: 1rem;
+  /* Font size for event or collaboration descriptions */
+  line-height: 1.6;
+  /* Line height for readability */
+  margin-bottom: 0.5rem;
+  /* Space below each paragraph */
+}
+
+#customer-involvement {
+  background-color: #CACADD;
+  /* Background color for the section */
+  color: #00231C;
+  /* Font color */
+  padding: 2rem;
+  /* Padding around the section */
+  font-family: 'Arial', sans-serif;
+  /* Font family */
+}
+
+#customer-involvement .container {
+  max-width: 1200px;
+  /* Maximum width of the content */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+#customer-involvement h1 {
+  font-size: 2.5rem;
+  /* Font size for the heading */
+  margin-bottom: 1.5rem;
+  /* Space below the heading */
+  text-align: center;
+  /* Center the heading */
+}
+
+.info {
+  display: grid;
+  /* Grid layout for sections */
+  gap: 2rem;
+  /* Space between sections */
+}
+
+.events,
+.stay-in-touch,
+.contact-info {
+  background-color: #fff;
+  /* Background color for sections */
+  padding: 1rem;
+  /* Padding inside sections */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+}
+
+.events h2,
+.stay-in-touch h2,
+.contact-info h2 {
+  font-size: 2rem;
+  /* Font size for section headings */
+  margin-bottom: 1rem;
+  /* Space below the heading */
+}
+
+.events ul {
+  list-style-type: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove padding */
+}
+
+.events li {
+  margin-bottom: 0.5rem;
+  /* Space below each list item */
+}
+
+.stay-in-touch p {
+  font-size: 1rem;
+  /* Font size for description */
+  margin-bottom: 1rem;
+  /* Space below the paragraph */
+}
+
+.signup-btn {
+  display: inline-block;
+  /* Inline block for button */
+  background-color: #00231C;
+  /* Button background color */
+  color: #CACADD;
+  /* Button text color */
+  padding: 0.75rem 1.5rem;
+  /* Padding inside the button */
+  border-radius: 4px;
+  /* Rounded corners */
+  text-decoration: none;
+  /* Remove underline */
+  font-size: 1rem;
+  /* Font size for button text */
+  text-align: center;
+  /* Center text inside the button */
+}
+
+.signup-btn:hover {
+  background-color: #004d00;
+  /* Darker shade on hover */
+}
+
+.contact-info a {
+  color: #00231C;
+  /* Link color */
+  text-decoration: underline;
+  /* Underline links */
+}
+
+.contact-info a:hover {
+  color: #004d00;
+  /* Darker shade on hover */
+}
